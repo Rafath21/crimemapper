@@ -1,19 +1,29 @@
 #map {
   height: 92vh;
-  width: 100%;
+  width: 75%;
   top: 50px;
-  overflow-y: hidden;
 }
 body {
   background: #343e3d;
   overflow-x: hidden;
-  overflow-y: hidden;
+}
+.leaflet-tile {
+  -webkit-filter: hue-rotate(180deg) invert(100%);
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+.statistics {
+  position: absolute;
+  z-index: 100;
+  font-size: 20px;
+  color: white;
+  left: 900px;
+  top: 14px;
+  font-weight: 200;
 }
 
 /*.container {
@@ -68,7 +78,7 @@ body {
   color: white;
 }
 
-/*.sidebar {
+.sidebar {
   width: 330px;
   height: 92vh;
   background: #e84855;
@@ -84,24 +94,26 @@ body {
   left: 15px;
   right: 15px;
   background: burlywood;
-  height: 220px;
+  height: 200px;
   font-size: 20px;
 }
 
+.helpline-container {
+  position: absolute;
+  width: 300px;
+  top: 450px;
+  left: 15px;
+  right: 15px;
+  background: white;
+  height: 145px;
+  font-size: 12px;
+}
+
+
 #quote {
   position: absolute;
-  top: 67px;
+  top: 64px;
   left: 15px;
   font-weight: bold;
   text-align: center;
-}*/
-
-.statistics {
-  position: absolute;
-  z-index: 100;
-  font-size: 20px;
-  color: white;
-  left: 900px;
-  top: 14px;
-  font-weight: 200;
 }
