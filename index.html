@@ -11,11 +11,11 @@
       integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
       crossorigin=""
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-
     <title>Crime mappper</title>
   </head>
+
   <body>
     <div class="container">
       <div class="title">
@@ -31,16 +31,18 @@
           <i class="fas fa-search"></i>
         </div>
       </div>
-      <div class="statistics" style="visibility: hidden; font-weight: bold">
-        STATS
-      </div>
       <div id="map"></div>
       <div class="sidebar">
-        <!-- <canvas id="bar-chart" width="800" height="450"></canvas>-->
+        <canvas id="bar-chart" width="800" height="450"></canvas>
         <div class="quote-container">
           <div id="quote"></div>
         </div>
-      </div>
+        
+        <div class="helpline-container">
+        <div class="district"></div>     
+        <div class="district"></div>     
+        <div class="district"></div>     
+        <div class="district"></div>     
     </div>
     <script
       src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
@@ -52,7 +54,7 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <script src="./districts.js"></script>
+    <script src="./stats.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
